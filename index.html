@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,30 +15,30 @@
       <div class="brand">
         <div class="brand-mark">K</div>
         <div>
-          <p class="brand-kicker">Client Demo</p>
+          <p class="brand-kicker">Demostración comercial</p>
           <h1>Kyrbot</h1>
         </div>
       </div>
 
-      <nav class="nav-tabs" aria-label="Main navigation">
-        <button class="nav-tab active" data-tab="dashboard">Dashboard</button>
+      <nav class="nav-tabs" aria-label="Navegación principal">
+        <button class="nav-tab active" data-tab="dashboard">Resumen</button>
         <button class="nav-tab" data-tab="clientes">Clientes</button>
-        <button class="nav-tab" data-tab="nuevo-pedido">Nuevo Pedido</button>
+        <button class="nav-tab" data-tab="nuevo-pedido">Nuevo pedido</button>
         <button class="nav-tab" data-tab="stock">Stock</button>
         <button class="nav-tab" data-tab="aprobaciones">Aprobaciones</button>
-        <button class="nav-tab" data-tab="facturacion">Facturacion</button>
+        <button class="nav-tab" data-tab="facturacion">Facturación</button>
         <button class="nav-tab" data-tab="cobranzas">Cobranzas</button>
         <button class="nav-tab" data-tab="reportes">Reportes</button>
       </nav>
 
       <div class="sidebar-card">
-        <p class="eyebrow">Proceso demo</p>
+        <p class="eyebrow">Recorrido de la demostración</p>
         <ol>
-          <li>Vendedor carga pedido</li>
-          <li>Stock valida disponibilidad</li>
-          <li>Supervisor aprueba condiciones</li>
+          <li>Ventas registra el pedido</li>
+          <li>Stock valida la disponibilidad</li>
+          <li>Supervisión aprueba condiciones</li>
           <li>Se emite factura</li>
-          <li>Cobranzas sigue el pago</li>
+          <li>Cobranzas gestiona el pago</li>
         </ol>
       </div>
     </aside>
@@ -46,32 +46,32 @@
     <main class="content">
       <header class="topbar">
         <div>
-          <p class="eyebrow">Operacion comercial</p>
+          <p class="eyebrow">Operación comercial</p>
           <h2>Vista integral del ciclo pedido a cobro</h2>
         </div>
         <div class="topbar-actions">
-          <button class="ghost-action" data-demo-action="sync">Sync Demo</button>
-          <button class="primary-action" data-demo-action="export">Exportar resumen</button>
+          <button class="ghost-action" data-demo-action="sync">Actualizar indicadores</button>
+          <button class="primary-action" data-demo-action="export">Compartir resumen ejecutivo</button>
         </div>
       </header>
 
       <div id="notice" class="notice hidden" role="status" aria-live="polite"></div>
 
-      <section id="dashboard" class="tab-panel active" aria-label="Dashboard">
+      <section id="dashboard" class="tab-panel active" aria-label="Resumen">
         <div class="hero-card">
           <div>
             <p class="eyebrow">Resumen ejecutivo</p>
             <h3>Canal mayorista con seguimiento en tiempo real</h3>
-            <p class="muted">Hoy ingresaron 14 pedidos, 11 ya tienen stock validado y 8 quedaron listos para facturar.</p>
+            <p class="muted">Hoy ingresaron 14 pedidos, 11 ya cuentan con stock validado y 8 quedaron listos para facturar.</p>
           </div>
           <div class="hero-metrics">
             <div>
               <strong>USD 84,700</strong>
-              <span>Pipeline mensual</span>
+              <span>Proyección mensual</span>
             </div>
             <div>
               <strong>93%</strong>
-              <span>Pedidos con SLA al dia</span>
+              <span>Pedidos con SLA al día</span>
             </div>
           </div>
         </div>
@@ -80,22 +80,22 @@
           <article class="stat-card">
             <span>Pedidos abiertos</span>
             <strong>14</strong>
-            <p>4 cargados hoy por el equipo de ventas.</p>
+              <p>4 ingresados hoy por el equipo comercial.</p>
           </article>
           <article class="stat-card">
             <span>Stock comprometido</span>
             <strong>76%</strong>
-            <p>Principalmente linea de lubricantes premium.</p>
+              <p>Principalmente línea de lubricantes premium.</p>
           </article>
           <article class="stat-card">
             <span>Facturas emitidas</span>
             <strong>8</strong>
-            <p>USD 28,400 listos para despacho.</p>
+              <p>USD 28,400 listos para despacho.</p>
           </article>
           <article class="stat-card accent">
             <span>Cobranza esperada</span>
             <strong>USD 19,600</strong>
-            <p>Vencimientos concentrados en 7 dias.</p>
+              <p>Vencimientos concentrados en 7 días.</p>
           </article>
         </div>
 
@@ -103,7 +103,7 @@
           <article class="panel-card">
             <div class="panel-heading">
               <h3>Pedidos recientes</h3>
-              <button class="text-action" data-focus-tab="nuevo-pedido">Ver carga</button>
+              <button class="text-action" data-focus-tab="nuevo-pedido">Ir a la carga</button>
             </div>
             <table>
               <thead>
@@ -117,20 +117,20 @@
               <tbody>
                 <tr>
                   <td>PD-24018</td>
-                  <td>Ferreteria Delta</td>
-                  <td>Lucia Gomez</td>
-                  <td><span class="badge warning">En validacion</span></td>
+                    <td>Ferretería Delta</td>
+                    <td>Lucía Gómez</td>
+                    <td><span class="badge warning">En validación</span></td>
                 </tr>
                 <tr>
                   <td>PD-24017</td>
                   <td>Agro Centro Sur</td>
-                  <td>Matias Ferreyra</td>
+                    <td>Matías Ferreyra</td>
                   <td><span class="badge success">Aprobado</span></td>
                 </tr>
                 <tr>
                   <td>PD-24016</td>
-                  <td>Transportes Rio</td>
-                  <td>Lucia Gomez</td>
+                    <td>Transportes Río</td>
+                    <td>Lucía Gómez</td>
                   <td><span class="badge info">Facturado</span></td>
                 </tr>
               </tbody>
@@ -140,20 +140,20 @@
           <article class="panel-card">
             <div class="panel-heading">
               <h3>Alertas operativas</h3>
-              <button class="text-action" data-demo-action="resolve-alerts">Marcar revisadas</button>
+              <button class="text-action" data-demo-action="resolve-alerts">Cerrar alertas</button>
             </div>
             <div class="alert-list">
               <div class="alert-item">
-                <span class="badge danger">Critico</span>
-                <p>Stock de NX-440 por debajo del punto de reposicion.</p>
+                <span class="badge danger">Crítico</span>
+                <p>Stock de NX-440 por debajo del punto de reposición.</p>
               </div>
               <div class="alert-item">
                 <span class="badge warning">Seguimiento</span>
-                <p>1 pedido requiere aprobacion por descuento mayor al 12%.</p>
+                <p>1 pedido requiere aprobación por un descuento superior al 12%.</p>
               </div>
               <div class="alert-item">
                 <span class="badge info">Dato</span>
-                <p>Cobranzas detecto 2 clientes con pagos parciales esta semana.</p>
+                <p>Cobranzas detectó 2 clientes con pagos parciales esta semana.</p>
               </div>
             </div>
           </article>
@@ -164,23 +164,23 @@
         <div class="panel-card full-width">
           <div class="panel-heading">
             <h3>Clientes activos</h3>
-            <button class="primary-action small" data-demo-action="new-client">Nuevo cliente</button>
+            <button class="primary-action small" data-demo-action="new-client">Incorporar cliente</button>
           </div>
           <table>
             <thead>
               <tr>
                 <th>Cliente</th>
                 <th>Segmento</th>
-                <th>Condicion</th>
-                <th>Limite credito</th>
+                <th>Condición</th>
+                <th>Límite de crédito</th>
                 <th>Estado</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Ferreteria Delta</td>
-                <td>Retail</td>
-                <td>Cuenta corriente 30 dias</td>
+                <td>Ferretería Delta</td>
+                <td>Minorista</td>
+                <td>Cuenta corriente a 30 días</td>
                 <td>USD 18,000</td>
                 <td><span class="badge success">Activa</span></td>
               </tr>
@@ -192,38 +192,38 @@
                 <td><span class="badge info">Preferente</span></td>
               </tr>
               <tr>
-                <td>Transportes Rio</td>
+                <td>Transportes Río</td>
                 <td>Corporativo</td>
-                <td>Cuenta corriente 15 dias</td>
+                <td>Cuenta corriente a 15 días</td>
                 <td>USD 24,000</td>
-                <td><span class="badge warning">Revision crediticia</span></td>
+                <td><span class="badge warning">Revisión crediticia</span></td>
               </tr>
             </tbody>
           </table>
         </div>
       </section>
 
-      <section id="nuevo-pedido" class="tab-panel" aria-label="Nuevo Pedido">
+      <section id="nuevo-pedido" class="tab-panel" aria-label="Nuevo pedido">
         <div class="two-column">
           <article class="panel-card">
             <div class="panel-heading">
-              <h3>Crear pedido demo</h3>
-              <span class="badge neutral">Flujo vendedor</span>
+              <h3>Generar pedido de demostración</h3>
+              <span class="badge neutral">Flujo comercial</span>
             </div>
             <form id="order-form" class="form-grid">
               <label>
                 Cliente
                 <select name="cliente">
-                  <option>Ferreteria Delta</option>
+                  <option>Ferretería Delta</option>
                   <option>Agro Centro Sur</option>
-                  <option>Transportes Rio</option>
+                  <option>Transportes Río</option>
                 </select>
               </label>
               <label>
                 Vendedor
                 <select name="vendedor">
-                  <option>Lucia Gomez</option>
-                  <option>Matias Ferreyra</option>
+                  <option>Lucía Gómez</option>
+                  <option>Matías Ferreyra</option>
                   <option>Carla Sosa</option>
                 </select>
               </label>
@@ -244,33 +244,33 @@
                 <input type="text" name="descuento" value="8%">
               </label>
               <label>
-                Entrega
+                Plazo de entrega
                 <input type="text" name="entrega" value="72 hs">
               </label>
-              <button type="submit" class="primary-action wide">Enviar a validacion</button>
+              <button type="submit" class="primary-action wide">Enviar a validación</button>
             </form>
           </article>
 
           <article class="panel-card">
             <div class="panel-heading">
               <h3>Pedido en curso</h3>
-              <button class="text-action" data-demo-action="copy-link">Copiar enlace</button>
+              <button class="text-action" data-demo-action="copy-link">Copiar vínculo</button>
             </div>
             <div class="timeline">
               <div class="timeline-item active">
                 <strong>1. Pedido cargado</strong>
-                <p>Lucia Gomez cargo el pedido PD-24018 para Ferreteria Delta.</p>
+                <p>Lucía Gómez cargó el pedido PD-24018 para Ferretería Delta.</p>
               </div>
               <div class="timeline-item">
-                <strong>2. Validacion de stock</strong>
-                <p>Se verifica disponibilidad por deposito y fecha de entrega.</p>
+                <strong>2. Validación de stock</strong>
+                <p>Se verifica disponibilidad por depósito y fecha de entrega.</p>
               </div>
               <div class="timeline-item">
-                <strong>3. Aprobacion comercial</strong>
-                <p>Solo aplica si excede descuento o limite de credito.</p>
+                <strong>3. Aprobación comercial</strong>
+                <p>Solo aplica si excede descuento o límite de crédito.</p>
               </div>
               <div class="timeline-item">
-                <strong>4. Facturacion</strong>
+                <strong>4. Facturación</strong>
                 <p>Se genera factura y se libera para despacho.</p>
               </div>
             </div>
@@ -281,14 +281,14 @@
       <section id="stock" class="tab-panel" aria-label="Stock">
         <div class="panel-card full-width">
           <div class="panel-heading">
-            <h3>Validacion de stock</h3>
-            <button class="ghost-action small" data-demo-action="run-stock">Ejecutar validacion</button>
+            <h3>Validación de stock</h3>
+            <button class="ghost-action small" data-demo-action="run-stock">Ejecutar validación</button>
           </div>
           <table>
             <thead>
               <tr>
                 <th>SKU</th>
-                <th>Descripcion</th>
+                <th>Descripción</th>
                 <th>Disponible</th>
                 <th>Reservado</th>
                 <th>Resultado</th>
@@ -330,31 +330,31 @@
           <div class="approval-grid">
             <div class="approval-card">
               <p class="eyebrow">Pedido PD-24018</p>
-              <h4>Ferreteria Delta</h4>
-              <p>Descuento solicitado: 14%. Requiere aprobacion de supervisor comercial.</p>
+              <h4>Ferretería Delta</h4>
+              <p>Descuento solicitado: 14%. Requiere aprobación del supervisor comercial.</p>
               <div class="card-actions">
-                <button class="primary-action small" data-approval="approve">Aprobar</button>
-                <button class="ghost-action small" data-approval="observe">Pedir ajuste</button>
+                <button class="primary-action small" data-approval="approve">Autorizar</button>
+                <button class="ghost-action small" data-approval="observe">Solicitar ajuste</button>
               </div>
             </div>
             <div class="approval-card">
               <p class="eyebrow">Pedido PD-24015</p>
-              <h4>Transportes Rio</h4>
-              <p>Credito utilizado al 96%. Validar antes de emitir factura.</p>
+              <h4>Transportes Río</h4>
+              <p>Crédito utilizado al 96%. Validar antes de emitir la factura.</p>
               <div class="card-actions">
-                <button class="primary-action small" data-approval="approve">Aprobar</button>
-                <button class="ghost-action small" data-approval="observe">Pedir ajuste</button>
+                <button class="primary-action small" data-approval="approve">Autorizar</button>
+                <button class="ghost-action small" data-approval="observe">Solicitar ajuste</button>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="facturacion" class="tab-panel" aria-label="Facturacion">
+      <section id="facturacion" class="tab-panel" aria-label="Facturación">
         <div class="panel-card full-width">
           <div class="panel-heading">
-            <h3>Facturacion lista para emitir</h3>
-            <button class="primary-action small" data-demo-action="issue-invoice">Emitir factura demo</button>
+            <h3>Facturación lista para emitir</h3>
+            <button class="primary-action small" data-demo-action="issue-invoice">Emitir factura</button>
           </div>
           <table>
             <thead>
@@ -370,7 +370,7 @@
               <tr>
                 <td>FC-A-008912</td>
                 <td>PD-24016</td>
-                <td>Transportes Rio</td>
+                <td>Transportes Río</td>
                 <td>USD 8,900</td>
                 <td><span class="badge info">Emitida</span></td>
               </tr>
@@ -384,9 +384,9 @@
               <tr>
                 <td>Pendiente</td>
                 <td>PD-24018</td>
-                <td>Ferreteria Delta</td>
+                <td>Ferretería Delta</td>
                 <td>USD 14,100</td>
-                <td><span class="badge warning">Esperando aprobacion</span></td>
+                  <td><span class="badge warning">Pendiente de aprobación</span></td>
               </tr>
             </tbody>
           </table>
@@ -398,7 +398,7 @@
           <article class="panel-card">
             <div class="panel-heading">
               <h3>Seguimiento de pagos</h3>
-              <button class="ghost-action small" data-demo-action="send-reminder">Enviar recordatorio</button>
+              <button class="ghost-action small" data-demo-action="send-reminder">Enviar recordatorio de pago</button>
             </div>
             <table>
               <thead>
@@ -411,21 +411,21 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Transportes Rio</td>
+                  <td>Transportes Río</td>
                   <td>FC-A-008912</td>
-                  <td>22 Apr</td>
+                  <td>22 abr.</td>
                   <td><span class="badge info">Pago parcial</span></td>
                 </tr>
                 <tr>
-                  <td>Ferreteria Delta</td>
+                  <td>Ferretería Delta</td>
                   <td>FC-A-008905</td>
-                  <td>24 Apr</td>
+                  <td>24 abr.</td>
                   <td><span class="badge warning">Por vencer</span></td>
                 </tr>
                 <tr>
                   <td>Agro Centro Sur</td>
                   <td>FC-A-008899</td>
-                  <td>15 Apr</td>
+                  <td>15 abr.</td>
                   <td><span class="badge danger">Vencida</span></td>
                 </tr>
               </tbody>
@@ -433,17 +433,17 @@
           </article>
 
           <article class="panel-card metric-stack">
-            <h3>Indicadores de cobranza</h3>
+            <h3>Indicadores de cobranzas</h3>
             <div class="mini-metric">
               <span>DSO estimado</span>
-              <strong>31 dias</strong>
+              <strong>31 días</strong>
             </div>
             <div class="mini-metric">
               <span>Cobrado esta semana</span>
               <strong>USD 12,400</strong>
             </div>
             <div class="mini-metric">
-              <span>Mora mayor a 30 dias</span>
+              <span>Mora mayor a 30 días</span>
               <strong>4.2%</strong>
             </div>
           </article>
@@ -455,20 +455,20 @@
           <article class="panel-card report-card">
             <p class="eyebrow">Reporte</p>
             <h3>Ventas por vendedor</h3>
-            <p>Lucia lidera el mes con USD 24,300 y 9 pedidos cerrados.</p>
-            <button class="text-action" data-demo-action="open-report">Abrir reporte</button>
+            <p>Lucía lidera el mes con USD 24,300 y 9 pedidos cerrados.</p>
+            <button class="text-action" data-demo-action="open-report">Ver informe ejecutivo</button>
           </article>
           <article class="panel-card report-card">
             <p class="eyebrow">Reporte</p>
             <h3>Pedidos por estado</h3>
-            <p>El 57% del pipeline ya supero validacion de stock.</p>
-            <button class="text-action" data-demo-action="open-report">Abrir reporte</button>
+            <p>El 57% del pipeline ya superó la validación de stock.</p>
+            <button class="text-action" data-demo-action="open-report">Ver informe ejecutivo</button>
           </article>
           <article class="panel-card report-card">
             <p class="eyebrow">Reporte</p>
             <h3>Cobranzas y mora</h3>
-            <p>La mora mayor a 30 dias se mantiene debajo del objetivo.</p>
-            <button class="text-action" data-demo-action="open-report">Abrir reporte</button>
+            <p>La mora mayor a 30 días se mantiene por debajo del objetivo.</p>
+            <button class="text-action" data-demo-action="open-report">Ver informe ejecutivo</button>
           </article>
         </div>
       </section>
