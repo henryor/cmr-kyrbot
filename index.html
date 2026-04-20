@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kyrbot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">K</div>
+        <div>
+          <p class="brand-kicker">Client Demo</p>
+          <h1>Kyrbot</h1>
+        </div>
+      </div>
+
+      <nav class="nav-tabs" aria-label="Main navigation">
+        <button class="nav-tab active" data-tab="dashboard">Dashboard</button>
+        <button class="nav-tab" data-tab="clientes">Clientes</button>
+        <button class="nav-tab" data-tab="nuevo-pedido">Nuevo Pedido</button>
+        <button class="nav-tab" data-tab="stock">Stock</button>
+        <button class="nav-tab" data-tab="aprobaciones">Aprobaciones</button>
+        <button class="nav-tab" data-tab="facturacion">Facturacion</button>
+        <button class="nav-tab" data-tab="cobranzas">Cobranzas</button>
+        <button class="nav-tab" data-tab="reportes">Reportes</button>
+      </nav>
+
+      <div class="sidebar-card">
+        <p class="eyebrow">Proceso demo</p>
+        <ol>
+          <li>Vendedor carga pedido</li>
+          <li>Stock valida disponibilidad</li>
+          <li>Supervisor aprueba condiciones</li>
+          <li>Se emite factura</li>
+          <li>Cobranzas sigue el pago</li>
+        </ol>
+      </div>
+    </aside>
+
+    <main class="content">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Operacion comercial</p>
+          <h2>Vista integral del ciclo pedido a cobro</h2>
+        </div>
+        <div class="topbar-actions">
+          <button class="ghost-action" data-demo-action="sync">Sync Demo</button>
+          <button class="primary-action" data-demo-action="export">Exportar resumen</button>
+        </div>
+      </header>
+
+      <div id="notice" class="notice hidden" role="status" aria-live="polite"></div>
+
+      <section id="dashboard" class="tab-panel active" aria-label="Dashboard">
+        <div class="hero-card">
+          <div>
+            <p class="eyebrow">Resumen ejecutivo</p>
+            <h3>Canal mayorista con seguimiento en tiempo real</h3>
+            <p class="muted">Hoy ingresaron 14 pedidos, 11 ya tienen stock validado y 8 quedaron listos para facturar.</p>
+          </div>
+          <div class="hero-metrics">
+            <div>
+              <strong>USD 84,700</strong>
+              <span>Pipeline mensual</span>
+            </div>
+            <div>
+              <strong>93%</strong>
+              <span>Pedidos con SLA al dia</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <article class="stat-card">
+            <span>Pedidos abiertos</span>
+            <strong>14</strong>
+            <p>4 cargados hoy por el equipo de ventas.</p>
+          </article>
+          <article class="stat-card">
+            <span>Stock comprometido</span>
+            <strong>76%</strong>
+            <p>Principalmente linea de lubricantes premium.</p>
+          </article>
+          <article class="stat-card">
+            <span>Facturas emitidas</span>
+            <strong>8</strong>
+            <p>USD 28,400 listos para despacho.</p>
+          </article>
+          <article class="stat-card accent">
+            <span>Cobranza esperada</span>
+            <strong>USD 19,600</strong>
+            <p>Vencimientos concentrados en 7 dias.</p>
+          </article>
+        </div>
+
+        <div class="two-column">
+          <article class="panel-card">
+            <div class="panel-heading">
+              <h3>Pedidos recientes</h3>
+              <button class="text-action" data-focus-tab="nuevo-pedido">Ver carga</button>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Pedido</th>
+                  <th>Cliente</th>
+                  <th>Vendedor</th>
+                  <th>Estado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>PD-24018</td>
+                  <td>Ferreteria Delta</td>
+                  <td>Lucia Gomez</td>
+                  <td><span class="badge warning">En validacion</span></td>
+                </tr>
+                <tr>
+                  <td>PD-24017</td>
+                  <td>Agro Centro Sur</td>
+                  <td>Matias Ferreyra</td>
+                  <td><span class="badge success">Aprobado</span></td>
+                </tr>
+                <tr>
+                  <td>PD-24016</td>
+                  <td>Transportes Rio</td>
+                  <td>Lucia Gomez</td>
+                  <td><span class="badge info">Facturado</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+
+          <article class="panel-card">
+            <div class="panel-heading">
+              <h3>Alertas operativas</h3>
+              <button class="text-action" data-demo-action="resolve-alerts">Marcar revisadas</button>
+            </div>
+            <div class="alert-list">
+              <div class="alert-item">
+                <span class="badge danger">Critico</span>
+                <p>Stock de NX-440 por debajo del punto de reposicion.</p>
+              </div>
+              <div class="alert-item">
+                <span class="badge warning">Seguimiento</span>
+                <p>1 pedido requiere aprobacion por descuento mayor al 12%.</p>
+              </div>
+              <div class="alert-item">
+                <span class="badge info">Dato</span>
+                <p>Cobranzas detecto 2 clientes con pagos parciales esta semana.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="clientes" class="tab-panel" aria-label="Clientes">
+        <div class="panel-card full-width">
+          <div class="panel-heading">
+            <h3>Clientes activos</h3>
+            <button class="primary-action small" data-demo-action="new-client">Nuevo cliente</button>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Cliente</th>
+                <th>Segmento</th>
+                <th>Condicion</th>
+                <th>Limite credito</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ferreteria Delta</td>
+                <td>Retail</td>
+                <td>Cuenta corriente 30 dias</td>
+                <td>USD 18,000</td>
+                <td><span class="badge success">Activa</span></td>
+              </tr>
+              <tr>
+                <td>Agro Centro Sur</td>
+                <td>Distribuidor</td>
+                <td>Transferencia anticipada</td>
+                <td>USD 36,000</td>
+                <td><span class="badge info">Preferente</span></td>
+              </tr>
+              <tr>
+                <td>Transportes Rio</td>
+                <td>Corporativo</td>
+                <td>Cuenta corriente 15 dias</td>
+                <td>USD 24,000</td>
+                <td><span class="badge warning">Revision crediticia</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="nuevo-pedido" class="tab-panel" aria-label="Nuevo Pedido">
+        <div class="two-column">
+          <article class="panel-card">
+            <div class="panel-heading">
+              <h3>Crear pedido demo</h3>
+              <span class="badge neutral">Flujo vendedor</span>
+            </div>
+            <form id="order-form" class="form-grid">
+              <label>
+                Cliente
+                <select name="cliente">
+                  <option>Ferreteria Delta</option>
+                  <option>Agro Centro Sur</option>
+                  <option>Transportes Rio</option>
+                </select>
+              </label>
+              <label>
+                Vendedor
+                <select name="vendedor">
+                  <option>Lucia Gomez</option>
+                  <option>Matias Ferreyra</option>
+                  <option>Carla Sosa</option>
+                </select>
+              </label>
+              <label>
+                Producto
+                <select name="producto">
+                  <option>NX-440 Lubricante Premium</option>
+                  <option>Filtro Industrial F-22</option>
+                  <option>Kit Taller KT-90</option>
+                </select>
+              </label>
+              <label>
+                Cantidad
+                <input type="number" name="cantidad" min="1" value="120">
+              </label>
+              <label>
+                Descuento
+                <input type="text" name="descuento" value="8%">
+              </label>
+              <label>
+                Entrega
+                <input type="text" name="entrega" value="72 hs">
+              </label>
+              <button type="submit" class="primary-action wide">Enviar a validacion</button>
+            </form>
+          </article>
+
+          <article class="panel-card">
+            <div class="panel-heading">
+              <h3>Pedido en curso</h3>
+              <button class="text-action" data-demo-action="copy-link">Copiar enlace</button>
+            </div>
+            <div class="timeline">
+              <div class="timeline-item active">
+                <strong>1. Pedido cargado</strong>
+                <p>Lucia Gomez cargo el pedido PD-24018 para Ferreteria Delta.</p>
+              </div>
+              <div class="timeline-item">
+                <strong>2. Validacion de stock</strong>
+                <p>Se verifica disponibilidad por deposito y fecha de entrega.</p>
+              </div>
+              <div class="timeline-item">
+                <strong>3. Aprobacion comercial</strong>
+                <p>Solo aplica si excede descuento o limite de credito.</p>
+              </div>
+              <div class="timeline-item">
+                <strong>4. Facturacion</strong>
+                <p>Se genera factura y se libera para despacho.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="stock" class="tab-panel" aria-label="Stock">
+        <div class="panel-card full-width">
+          <div class="panel-heading">
+            <h3>Validacion de stock</h3>
+            <button class="ghost-action small" data-demo-action="run-stock">Ejecutar validacion</button>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>SKU</th>
+                <th>Descripcion</th>
+                <th>Disponible</th>
+                <th>Reservado</th>
+                <th>Resultado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>NX-440</td>
+                <td>Lubricante Premium 20L</td>
+                <td>95</td>
+                <td>120</td>
+                <td><span class="badge warning">Parcial</span></td>
+              </tr>
+              <tr>
+                <td>F-22</td>
+                <td>Filtro Industrial</td>
+                <td>420</td>
+                <td>60</td>
+                <td><span class="badge success">OK</span></td>
+              </tr>
+              <tr>
+                <td>KT-90</td>
+                <td>Kit Taller</td>
+                <td>38</td>
+                <td>12</td>
+                <td><span class="badge success">OK</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="aprobaciones" class="tab-panel" aria-label="Aprobaciones">
+        <div class="panel-card full-width">
+          <div class="panel-heading">
+            <h3>Bandeja de aprobaciones</h3>
+            <span class="badge warning">2 pendientes</span>
+          </div>
+          <div class="approval-grid">
+            <div class="approval-card">
+              <p class="eyebrow">Pedido PD-24018</p>
+              <h4>Ferreteria Delta</h4>
+              <p>Descuento solicitado: 14%. Requiere aprobacion de supervisor comercial.</p>
+              <div class="card-actions">
+                <button class="primary-action small" data-approval="approve">Aprobar</button>
+                <button class="ghost-action small" data-approval="observe">Pedir ajuste</button>
+              </div>
+            </div>
+            <div class="approval-card">
+              <p class="eyebrow">Pedido PD-24015</p>
+              <h4>Transportes Rio</h4>
+              <p>Credito utilizado al 96%. Validar antes de emitir factura.</p>
+              <div class="card-actions">
+                <button class="primary-action small" data-approval="approve">Aprobar</button>
+                <button class="ghost-action small" data-approval="observe">Pedir ajuste</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="facturacion" class="tab-panel" aria-label="Facturacion">
+        <div class="panel-card full-width">
+          <div class="panel-heading">
+            <h3>Facturacion lista para emitir</h3>
+            <button class="primary-action small" data-demo-action="issue-invoice">Emitir factura demo</button>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Factura</th>
+                <th>Pedido</th>
+                <th>Cliente</th>
+                <th>Monto</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>FC-A-008912</td>
+                <td>PD-24016</td>
+                <td>Transportes Rio</td>
+                <td>USD 8,900</td>
+                <td><span class="badge info">Emitida</span></td>
+              </tr>
+              <tr>
+                <td>Pendiente</td>
+                <td>PD-24017</td>
+                <td>Agro Centro Sur</td>
+                <td>USD 5,400</td>
+                <td><span class="badge success">Lista</span></td>
+              </tr>
+              <tr>
+                <td>Pendiente</td>
+                <td>PD-24018</td>
+                <td>Ferreteria Delta</td>
+                <td>USD 14,100</td>
+                <td><span class="badge warning">Esperando aprobacion</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="cobranzas" class="tab-panel" aria-label="Cobranzas">
+        <div class="two-column">
+          <article class="panel-card">
+            <div class="panel-heading">
+              <h3>Seguimiento de pagos</h3>
+              <button class="ghost-action small" data-demo-action="send-reminder">Enviar recordatorio</button>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Cliente</th>
+                  <th>Factura</th>
+                  <th>Vencimiento</th>
+                  <th>Estado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Transportes Rio</td>
+                  <td>FC-A-008912</td>
+                  <td>22 Apr</td>
+                  <td><span class="badge info">Pago parcial</span></td>
+                </tr>
+                <tr>
+                  <td>Ferreteria Delta</td>
+                  <td>FC-A-008905</td>
+                  <td>24 Apr</td>
+                  <td><span class="badge warning">Por vencer</span></td>
+                </tr>
+                <tr>
+                  <td>Agro Centro Sur</td>
+                  <td>FC-A-008899</td>
+                  <td>15 Apr</td>
+                  <td><span class="badge danger">Vencida</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+
+          <article class="panel-card metric-stack">
+            <h3>Indicadores de cobranza</h3>
+            <div class="mini-metric">
+              <span>DSO estimado</span>
+              <strong>31 dias</strong>
+            </div>
+            <div class="mini-metric">
+              <span>Cobrado esta semana</span>
+              <strong>USD 12,400</strong>
+            </div>
+            <div class="mini-metric">
+              <span>Mora mayor a 30 dias</span>
+              <strong>4.2%</strong>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="reportes" class="tab-panel" aria-label="Reportes">
+        <div class="three-column">
+          <article class="panel-card report-card">
+            <p class="eyebrow">Reporte</p>
+            <h3>Ventas por vendedor</h3>
+            <p>Lucia lidera el mes con USD 24,300 y 9 pedidos cerrados.</p>
+            <button class="text-action" data-demo-action="open-report">Abrir reporte</button>
+          </article>
+          <article class="panel-card report-card">
+            <p class="eyebrow">Reporte</p>
+            <h3>Pedidos por estado</h3>
+            <p>El 57% del pipeline ya supero validacion de stock.</p>
+            <button class="text-action" data-demo-action="open-report">Abrir reporte</button>
+          </article>
+          <article class="panel-card report-card">
+            <p class="eyebrow">Reporte</p>
+            <h3>Cobranzas y mora</h3>
+            <p>La mora mayor a 30 dias se mantiene debajo del objetivo.</p>
+            <button class="text-action" data-demo-action="open-report">Abrir reporte</button>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
